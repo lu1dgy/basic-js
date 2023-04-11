@@ -29,7 +29,7 @@ const HALF_LIFE_PERIOD = 5730;
   const a = 0.693 / HALF_LIFE_PERIOD;
   const b = Math.log(MODERN_ACTIVITY / activity) / a;
 
-  return b
+  return Math.ceil(b);
 }
 
 module.exports = {
