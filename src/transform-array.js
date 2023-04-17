@@ -29,16 +29,15 @@ const { NotImplementedError } = require('../extensions/index.js');
     } else if (arr[i] === "--double-next") {
       if (i < arr.length - 1) {
         newArr.push(arr[i + 1]);
-      }
+        }
     } else if (arr[i] === "--double-prev") {
       if (i > 0 && arr[i - 2] !== "--discard-next") {
         newArr.push(arr[i - 1]);
       }
-    } else {
+    } else { 
       newArr.push(arr[i]);
     }
   }
-
   return newArr;
 }
 
